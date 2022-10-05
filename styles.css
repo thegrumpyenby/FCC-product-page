@@ -1,4 +1,16 @@
+h1 {
+  font-family: Lobster Regular 400;
+}
 
+.dogs {
+  display: flex;
+}
 
-/* TODO: ADD AT LEAST 1 FLEXBOX */
+.intro-img {
+  max-width: 300px;
+  height: auto;
+  margin: 0.2em
+
+}
+
 /* TODO: ADD MEDIA QUERY */
