@@ -2,12 +2,16 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0.2rem;
+}
+
 #header-img {
   height: 80px;
 }
 
 header {
-  position: fixed;
+  position: sticky;
   height: 80px;
   top: 0;
   left: 0;
@@ -24,12 +28,14 @@ header {
 
 #nav-bar ul {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   list-style: none;
 
 }
 
 #nav-bar a {
-  padding: 10px;
+  padding: 0.5rem;
   text-decoration: none;
   color: black;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -37,13 +43,17 @@ header {
   font-weight: 600;
 }
 
+#nav-bar a:hover {
+  color:deepskyblue;
+}
+
 body {
   font-size: 0.9em;
   font-family: "Open Sans", "Arial", sans-serif;
   width: 100%;
   min-height: 100vh;
-  margin-top: 100px;
   color: black;
+  margin: 0.2rem;
 
 }
 
@@ -65,15 +75,77 @@ h3 {
   color:deepskyblue
 }
 
+#meet-dogs, #dogs-benefits, #in-action {
+  scroll-margin-top: 6rem;
+}
 .dogs {
   display: flex;
+  flex-direction: column;
 }
 
-.intro-img {
-  max-width: 300px;
-  height: auto;
-  margin: 0.2em
+.dogs h3 {
+  text-align: center;
+}
+
+.dogs ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.dog-img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+#video {
+  display:block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+}
+
+fieldset {
+  border-style: hidden;
+}
+
+label, input, select {
+  margin: 0.2rem 0;
+}
+
+label {
+  display: block;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+}
+
+#submit {
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  border-radius: 10px;
+  width: 100px;
+  display: block;
+  margin: 0.5rem auto;
 
 }
 
-/* TODO: ADD MEDIA QUERY */
+@media (min-width: 500px) {
+  #nav-bar ul {
+    flex-direction: row;
+    }
+}
+
+@media (min-width: 500px) {
+  .dogs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
