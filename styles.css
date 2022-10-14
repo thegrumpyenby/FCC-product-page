@@ -63,15 +63,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 6em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 4em;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 3.2em;
   color:deepskyblue
 }
 
@@ -146,6 +146,6 @@ input, select {
 @media (min-width: 500px) {
   .dogs {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
