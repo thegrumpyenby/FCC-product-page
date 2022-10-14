@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-with, initial-scale=1.0">
-  <title>Meet The Grumpy Dogs</title>
+  <title>The Grumpy Dogs</title>
   <link href="./styles.css" rel="stylesheet">
   <!-- GOOGLE FONTS:
     Lobster Regular 400
@@ -19,12 +19,11 @@
 
 <body>
   <header id="header">
-    <!-- TODO: SWAP OUT PLACEHOLDER IMAGE AND ADD ALT -->
     <nav id="nav-bar">
-      <img
+      <a href="./"><img
         id="header-img" 
         src="./assets/logoipsum-284.svg"
-        alt="PLACEHOLDER">
+        alt="Logo Ipsum"></a>
       <ul>
         <li>
           <a class="nav-link" href="#meet-dogs">Meet the dogs</a></li>
@@ -37,7 +36,8 @@
   </header>
 
   <main>
-    <h1 class="hero-heading">Meet the dogs of the Grumpy Family</h1>
+    <h1 class="hero-heading">Clap the dogs of the Grumpy Family</h1>
+    <p>Whether you’re near or far, nothing should stop you from <a href="https://www.facebook.com/BeingScottish/photos/a.10150942196208559/10158103073528559/?type=3" target="blank">clapping some good dugs</a>. So we wanted to give you a chance to send some virtual love to our (mostly) good dogs.</p>
     <!-- FIRST SECTION -->
     <section id="meet-dogs">
       <h2>Meet the dogs</h2>
@@ -50,7 +50,7 @@
             <li>Cannot fix your CSS but will try</li>
           </ul>
           <img 
-            class="intro-img" 
+            class="dog-img" 
             src="./assets/Nomi.jpg" 
             alt="Nomi, a blue merle Australian Shepherd, sits on a sofa in front of an open laptop and is looking at the camera">
         </div>
@@ -64,7 +64,7 @@
           </ul>
           
           <img 
-            class="intro-img" 
+            class="dog-img" 
             src="assets/Magnus.jpg"
             alt="Magnus, a black tri Australian Shepherd with minimal white, is lying on a sofa, shyly looking at the camera while he holds a stolen sock in his mouth">
         </div>
@@ -76,12 +76,16 @@
     <!-- SECOND SECTION -->
     <section id="dogs-benefits">
       <h2>Benefits</h2>
+      <p>Clapping dugs is obviously beneficial for both the dug and the human. That is, if the dogs like to be petted. Luckily, ours do, though Nomi more so than Magnus. The upside of virtually sending cuddles to a dog is that we can make sure they’re up for it before we deliver your pets to them.</p>
+     
+      <p>  
+      Just make sure to always ask before approaching a dog irl. Pet carefully and pay attention to the dogs’ reaction and body language.
+      </p>
     </section>
 
     <!-- THIRD SECTION -->
     <section id="in-action">
       <h2>The Grumpy Dogs in action</h2>
-      <!-- TODO: EMBED PRODUCT VIDEO with id="video" -->
       <video id="video" width="400px" height="auto" controls>
         <source src="./assets/sample-video.mp4">
       </video>
@@ -89,23 +93,35 @@
 
     <!-- FOURTH SECTION -->
     <section id="learn-more">
-      <h2>Wanna know more?</h2>
-
-      <!-- TODO: ADD A FORM ELEMENT with id="form"
-      * Within the form, there is an input field with id="email" where you can enter an email address
-      * The #email input field should have placeholder text to let users know what the field is for
-      * The #email input field uses HTML5 validation to confirm that the entered text is an email address
-      * Within the form, there is a submit input with a corresponding id="submit"
-      * When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)-->
+      <h2>Send yer claps</h2>
+      <p>Choose which dog you want to send caps to and we will deliver them accordingly. We might even send you a photo as proof, so leave your email address. ;) </p>
+      <form id="form" action="https://formsubmit.co/kai.katschthaler@gmail.com" method="POST">
+        <fieldset>
+          <label for="name">Your name:
+            <input type="text" id="name" name="name" placeholder="Tell us your name" required>
+          </label>
+          <label for="email">Your email address:
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="choose-a-dog">Choose who you want to send claps to:
+            <select id="choose-a-dog" name="choice" required>
+              <option value="" selected disabled>(Choose wisely)</option>
+              <option value="nomi">Clap Nomi for me</option>
+              <option value="magnus">Clap Magnus for me</option>
+              <option value="wildcard">Wildcard: Choose who to clap for me</option>
+            </select>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit">
+      </form>
     </section>
 
 
   </main>
 
 
-
-
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
 </html>
