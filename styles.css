@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
   color: black;
   margin: 0.3rem;
-  margin-top: 80px;
 }
 
 header {
@@ -160,6 +159,10 @@ input, select {
   }
 
   #header-img {
+    height: 150px;
+  }
+
+  header {
     height: 150px;
   }
 
