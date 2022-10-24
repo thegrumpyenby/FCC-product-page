@@ -111,7 +111,7 @@ h3 {
 
 #video {
   display:block;
-  margin: 0 auto;
+  margin: 0 auto; 
   max-width: 100%;
 }
 
@@ -148,6 +148,11 @@ input, select {
 }
 
 @media (min-width: 500px) {
+
+  html {
+    margin: 6rem;
+  }
+
   #nav-bar ul {
     flex-direction: row;
     }
@@ -157,7 +162,6 @@ input, select {
     justify-content: space-evenly;
   }
 
-  html {
-    margin: 6rem;
-  }
+  
+
 }
