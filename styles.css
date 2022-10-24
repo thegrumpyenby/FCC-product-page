@@ -20,6 +20,7 @@ header {
   right: 0;
   background-color:white;
   padding-bottom: 25px;
+  z-index: 1;
 }
 
 #nav-bar {
