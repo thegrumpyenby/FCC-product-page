@@ -55,7 +55,7 @@ body {
   width: 100%;
   min-height: 100vh;
   color: black;
-  margin: 0.2rem;
+  margin: 0.2rem 0.2rem;
 
 }
 
@@ -151,11 +151,13 @@ input, select {
   #nav-bar ul {
     flex-direction: row;
     }
-}
 
-@media (min-width: 500px) {
   .dogs {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  html {
+    margin: 6rem;
   }
 }
