@@ -73,6 +73,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 6em;
+  margin-bottom: 0.4rem;
 }
 
 h2 {
