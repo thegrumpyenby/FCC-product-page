@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
   margin: 0.2rem;
 }
@@ -153,9 +149,13 @@ input, select {
     margin: 6rem;
   }
 
+  #header-img {
+    height: 150px;
+  }
+
   #nav-bar ul {
     flex-direction: row;
-    font-size: 1.6rem;
+    font-size: 4rem;
     }
 
   .dogs {
