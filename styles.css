@@ -83,7 +83,7 @@ h3 {
 }
 
 #meet-dogs, #dogs-benefits, #in-action {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 10rem;
 }
 .dogs {
   display: flex;
@@ -179,7 +179,6 @@ input, select {
     flex-direction: row;
     justify-content: space-evenly;
   }
-
   
 
 }
