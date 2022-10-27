@@ -1,19 +1,17 @@
-html {
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
-}
-
 body {
   font-size: 1em;
   font-family: "Open Sans", "Arial", sans-serif;
-  width: 100%;
+  /* width: 100%; */
+  max-width: fit-content;
   min-height: 100vh;
   color: black;
-  margin: 0.3rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 header {
   position: sticky;
+  width: 100%;
   height: 80px;
   top: 0;
   left: 0;
@@ -117,31 +115,29 @@ form {
   margin: 0 auto;
 }
 
-fieldset {
-  border-style: hidden;
-}
-
-label, input, select {
-  margin: 0.2rem 0;
-}
-
-label {
+label, input, select, #submit {
+  margin: 0.3rem 0;
   display: block;
-}
+  }
 
-input, select {
+input, select, #submit {
   display: block;
-  width: 100%;
+  max-width: fit-content;
+  border-radius: 11px;
+  font-size: inherit;
+  padding: 0.25em 0.625em 0.25em 0.625em;
+  border: 2px solid black;
+  appearance: none;
 }
 
 #submit {
   background-color: deepskyblue;
   border-color: deepskyblue;
   color: white;
-  border-radius: 10px;
+  border-radius: 11px;
   width: 100px;
   display: block;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
 
 }
 
@@ -153,13 +149,10 @@ input, select {
 
 @media (min-width: 500px) {
 
-  html {
-    margin-left: 6.25em;
-    margin-right: 6.25em;
-  }
-
   body {
     font-size: 1.25em;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   h1 {
