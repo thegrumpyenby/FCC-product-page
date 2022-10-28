@@ -87,7 +87,7 @@
     <!-- THIRD SECTION -->
     <section id="in-action">
       <h2>The Grumpy Dogs in action</h2>
-      <video id="video" controls nodownload muted>
+      <video id="video" controls nodownload muted preload>
         <source src="./assets/sample-video.mp4">
       </video>
     </section>
@@ -97,22 +97,20 @@
       <h2>Send yer claps</h2>
       <p>Choose which dog you want us to pet for you and we will deliver accordingly. The wildcard option will get you either of the dogs or… who knows. 🤷🏼 </p>
       <form id="form" action="https://formsubmit.co/kai.katschthaler@gmail.com" method="POST">
-        <fieldset>
-          <label for="name">Your name:
-            <input type="text" id="name" name="name" placeholder="Tell us your name" required>
-          </label>
-          <label for="email">Your email address:
-            <input type="email" id="email" name="email" placeholder="Your email address" required>
-          </label>
-          <label for="choose-a-dog">Choose who you want to send claps to:
-            <select id="choose-a-dog" name="choice" required>
-              <option value="" selected disabled>(Choose wisely)</option>
-              <option value="nomi">Clap Nomi for me</option>
-              <option value="magnus">Clap Magnus for me</option>
-              <option value="wildcard">Wildcard: Choose who to clap for me</option>
-            </select>
-          </label>
-        </fieldset>
+        <label for="name">Your name:
+          <input type="text" id="name" name="name" placeholder="Tell us your name" required>
+        </label>
+        <label for="email">Your email address:
+          <input type="email" id="email" name="email" placeholder="Your email address" required>
+        </label>
+        <label for="choose-a-dog">Choose who you want to send claps to:
+          <select id="choose-a-dog" name="choice" required>
+            <option value="" selected disabled>(Choose wisely)</option>
+            <option value="nomi">Clap Nomi for me</option>
+            <option value="magnus">Clap Magnus for me</option>
+            <option value="wildcard">Wildcard: Choose who to clap for me</option>
+          </select>
+        </label>
       
         <input type="submit" id="submit">
       </form>
@@ -122,7 +120,7 @@
   </main>
 
   <div id="kofi">
-    <p>You can say thanks by buying us some dog treats!</p>
+    <p>Give us a treat if you enjoyed this!</p>
     
     <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Tip us!', '#00bfff', 'X8X8581NK');kofiwidget2.draw();</script> 
   </div>
