@@ -94,8 +94,7 @@ h3 {
 }
 
 .dogs-info {
-  border: 3px solid magenta;
-  flex-shrink: 1;
+  min-width: 250px;
 }
 
 .dogs h3 {
