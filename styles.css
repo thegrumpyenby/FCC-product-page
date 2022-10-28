@@ -90,6 +90,12 @@ h3 {
 .dogs {
   display: flex;
   flex-direction: column;
+  margin-left: 0.25em;
+}
+
+.dogs-info {
+  border: 3px solid magenta;
+  flex-shrink: 1;
 }
 
 .dogs h3 {
@@ -145,6 +151,10 @@ input, select, #submit {
 
 }
 
+input {
+  width: 
+}
+
 #kofi {
   display: flex;
   flex-direction: column;
@@ -172,10 +182,14 @@ input, select, #submit {
     font-size: 1.25em;
     }
 
+  
+  
+}
+
+@media (min-width: 700px) {
   .dogs {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  
 
 }
