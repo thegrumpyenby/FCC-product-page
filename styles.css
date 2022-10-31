@@ -160,6 +160,13 @@ input {
   align-items: center;
 }
 
+footer {
+  font-size: 0.75em;
+  text-align: right;
+  margin-top: 3em;
+
+}
+
 @media (min-width: 500px) {
 
   body {
