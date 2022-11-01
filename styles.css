@@ -183,11 +183,7 @@ footer {
     height: 150px;
   }
 
-  #nav-bar ul {
-    flex-direction: row;
-    font-size: 1.25em;
-    }
-
+  
   
   
 }
@@ -198,4 +194,11 @@ footer {
     justify-content: space-evenly;
   }
 
+}
+
+@media (min-width: 900px) {
+  #nav-bar ul {
+    flex-direction: row;
+    font-size: 1.25em;
+    }
 }
